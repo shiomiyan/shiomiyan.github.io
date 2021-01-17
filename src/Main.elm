@@ -38,31 +38,33 @@ update msg model =
 view : Model -> Html Msg
 view model =
     div [ class "container" ]
-        [ h1 [] [ text "Kaito (umi, shiomiya) Suzuki" ]
-        , p [] [ text "With a self-abused life. Gaming, occasionally engineering." ]
-        , h3 [] [ text "info" ]
-        , a [] [ text "16, November, 1998" ]
-        , h3 [] [ text "Social" ]
-        , div [ class "social" ]
-            [ a [ href "https://www.twitter.com/shiomiyan" ]
-                [ img
-                    [ src "svg/twitter.svg"
+        [ div [ class "content" ]
+            [ h1 [] [ text "Kaito (umi, shiomiya) Suzuki" ]
+            , p [] [ text "With a self-abused life. Gaming, occasionally engineering." ]
+            , h3 [] [ text "info" ]
+            , a [] [ text "16, November, 1998" ]
+            , h3 [] [ text "Social" ]
+            , div [ class "social" ]
+                [ a [ href "https://www.twitter.com/shiomiyan" ]
+                    [ img
+                        [ src "svg/twitter.svg"
+                        ]
+                        []
                     ]
-                    []
-                ]
-            , text " "
-            , a [ href "https://www.github.com/shiomiyan" ]
-                [ img
-                    [ src "svg/github.svg"
+                , text " "
+                , a [ href "https://www.github.com/shiomiyan" ]
+                    [ img
+                        [ src "svg/github.svg"
+                        ]
+                        []
                     ]
-                    []
-                ]
-            , text " "
-            , a [ href "https://www.shiomiya.com/" ]
-                [ img
-                    [ src "svg/blog.svg"
+                , text " "
+                , a [ href "https://www.shiomiya.com/" ]
+                    [ img
+                        [ src "svg/blog.svg"
+                        ]
+                        []
                     ]
-                    []
                 ]
             ]
         ]

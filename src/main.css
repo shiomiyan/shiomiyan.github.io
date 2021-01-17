@@ -9,6 +9,16 @@
   height: inherit;
 }
 
+html {
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+}
+
 body {
   font-family: SFMono-Regular,Consolas,Roboto Mono,Liberation Mono,Menlo,monospace;
   margin: 0;
@@ -18,7 +28,7 @@ body {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 24px;
 }
 
 img {
@@ -42,13 +52,17 @@ img.social {
   max-width: 20px;
 }
 
-div.container {
+.container {
+  position: relative;
   margin: auto;
-  width: 704px;
-  height: 504px;
-  padding: 24px;
-  right: 20px;
-  left: 20px;
-  top: 20px;
-  bottom: 20px;
+  padding: 20px;
+}
+
+.content {
+  text-align:center;
+  margin: 0 auto;
+}
+
+*{
+  box-sizing: inherit;
 }
