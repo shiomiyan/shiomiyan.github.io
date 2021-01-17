@@ -57,13 +57,12 @@ img.social {
   left: 50%;
   position: absolute;
   margin: auto;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
 .content {
   position: relative;
-  text-align:center;
-  margin-left: 252px;
-  margin-top: -252px;
   padding: 47px;
   width: 504px;
   height: 504px;
