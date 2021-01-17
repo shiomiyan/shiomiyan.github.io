@@ -38,9 +38,11 @@ update msg model =
 view : Model -> Html Msg
 view model =
     div [ class "container" ]
-        [ div [ class "content" ]
-            [ h1 [] [ text "Kaito (umi, shiomiya) Suzuki" ]
-            , p [] [ text "With a self-abused life. Gaming, occasionally engineering." ]
+        [ section [ class "content" ]
+            [ h1 [] [ text "Kaito Suzuki" ]
+            , a [] [ text "With a self-abused life." ]
+            , br [] []
+            , a [] [ text "Gaming, occasionally engineering." ]
             , h3 [] [ text "info" ]
             , a [] [ text "16, November, 1998" ]
             , h3 [] [ text "Social" ]
@@ -66,6 +68,8 @@ view model =
                         []
                     ]
                 ]
+                , h3 [] [text "Contact"]
+                , a [] [ text "social.shiomiya@gmail.com" ]
             ]
         ]
 
