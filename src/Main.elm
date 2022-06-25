@@ -39,7 +39,7 @@ view : Model -> Html Msg
 view model =
     div [ class "container" ]
         [ section [ class "content" ]
-            [ h1 [] [ text "Kaito Suzuki" ]
+            [ h1 [] [ text "usr::Shiomiyan::new()" ]
             , a [] [ text "With a self-abused life." ]
             , br [] []
             , a [] [ text "Gaming, occasionally engineering." ]
